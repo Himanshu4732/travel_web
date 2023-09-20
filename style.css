@@ -1,0 +1,262 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* .material-symbols-outlined {
+  
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+} */
+#navbar{
+    display: flex;
+align-items: center;
+position: sticky;
+top: 0;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+   
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5; 
+   }
+
+ #logo{
+   margin: 0px 5px;
+    padding: 10px;
+ }
+ #logo img{
+   height: 30px;
+    width: 32px;
+    border-radius: 142px;
+ }
+ #navbar ul{
+    display: flex;
+ }
+ #navbar ul li{
+   list-style: none;
+    font-size: 1.3rem;
+    margin: 5px;
+   
+}
+ 
+ #navbar ul li a{
+   color:white;
+    padding: 3px 35px;
+    text-decoration: none;
+    border-radius: 23px;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ #navbar ul li a:hover{
+   color:rgb(0, 0, 0);
+   background: white;
+   transition: 0.4s;
+ }
+
+ #home{
+   display: flex;
+   flex-direction: column;
+   padding: 80px 280px;
+   justify-content: center;
+   align-items: center;
+ }
+ #home::before{
+   content: "";
+    background: url(./img/b.jpg);
+    position: absolute;
+   
+    height: 500px;
+    width:100%;
+    z-index: -1;
+    opacity: 1; 
+ }
+
+ #home h1{
+   color: rgb(0, 0, 0);
+   text-align: center;
+   font-family: 'Darumadrop One', cursive; }
+
+ #home p{
+   font-size: 1.2rem;
+ }
+
+ .homeheading{
+   font-size: 2rem;
+   
+   padding: 12px;
+ }
+
+ .btn{
+   padding: 10px 45px;
+   border: 2px solid white;
+   background-color: black;
+   color: white;
+   border-radius: 25px;
+   font-size: 1.2rem;
+   margin: 30px;
+   cursor: pointer;
+   opacity: 0.4;
+}
+.btn:hover{
+   background-color: black;
+   opacity: 1;
+   transition: 0.5s;
+}
+#services-cont{
+  margin: 71px 0px
+}
+#services-cont{
+  margin: 71px 0px
+}
+.s-h{
+    font-size: 2rem;
+   text-align: center;
+   padding: 12px;
+   font-family: 'Darumadrop One', cursive;
+}
+
+#services{
+margin: 34px;
+display: flex;
+}
+
+#services .box{
+border: 2px solid black;
+
+    border-radius: 20px;
+    margin: 0px 28px;
+    padding: 34px;
+    background-color: #f2f7b3;
+
+}
+#services .box:hover{
+  background-color: #f8ff93;
+
+}
+
+#services .box img{
+  margin: auto;
+  display: block;
+  background-color: rgb(232, 195, 70);
+  padding: 10px;
+  border-radius: 20px;
+  
+}
+.shh{
+  text-align: center;
+  font-family: 'Darumadrop One', cursive;
+}
+
+.h-t{
+  font-size: 2rem;
+  text-align: center;
+  padding: 12px;
+  font-family: 'Darumadrop One', cursive;
+}
+
+#country-box{
+  display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    padding:10px 0px;
+}
+/* #destination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+#destination::before{
+  content: "";
+  background: url(./img/c\ \(2\).jpg);
+  height: 250px;
+  width: 100%;
+  position: absolute;
+ z-index: -1;
+ opacity: 1;
+}
+#country-box img{
+height: 100px;
+width: 100px;
+padding: 10px 10px;
+    margin: 0px 20px;
+background-color: rgb(212, 210, 210);
+border-radius: 20px;
+}
+
+#country-box img:hover{
+  background-color:rgb(185, 183, 183);
+}
+
+#contact{
+  position: relative;
+}
+
+#contact::before{
+  content: "";
+    background-color: #f2f7b3;
+    position: absolute;
+   
+    height: 546px;
+    width:100%;
+    z-index: -1;
+    opacity: 1; 
+}
+
+
+#contact{
+margin: 40px 0px;
+}
+
+.h-prim{
+  display: flex;
+  justify-content: center;
+  font-family: 'Darumadrop One', cursive;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+#contactbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#contactbox input, 
+#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+  } 
+  
+  #contactbox label{
+    font-size: 1rem;
+    font-family: 'Darumadrop One', cursive;
+
+}
+#contactbox form{
+  width: 40%;
+}
+footer{
+  background-color: black;
+  color: white;
+ display: flex;
+ justify-content: center;
+ padding: 10px;
+}
