@@ -1,32 +1,24 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html{
   scroll-behavior: smooth;
 }
 
-/* .material-symbols-outlined {
-  
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-} */
 #navbar{
     display: flex;
 align-items: center;
 position: sticky;
 top: 0;
-
+width: 100vw;
 }
 #navbar::before{
     content: "";
     background-color: black;
     position: absolute;
-   
     height: 100%;
     width:100%;
     z-index: -1;
@@ -40,7 +32,7 @@ top: 0;
  #logo img{
    height: 30px;
     width: 32px;
-    border-radius: 142px;
+    border-radius:50%;
  }
  #navbar ul{
     display: flex;
@@ -72,14 +64,20 @@ top: 0;
    padding: 80px 280px;
    justify-content: center;
    align-items: center;
+   height: 70vh;
+   width: 100%;
  }
  #home::before{
    content: "";
     background: url(./img/b.jpg);
     position: absolute;
-   
-    height: 500px;
+    top: 0;
+    left: 0;
+    height: 80%;
     width:100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: -1;
     opacity: 1; 
  }
@@ -115,6 +113,8 @@ top: 0;
    opacity: 1;
    transition: 0.5s;
 }
+
+
 #services-cont{
   margin: 71px 0px
 }
@@ -174,12 +174,7 @@ border: 2px solid black;
     justify-content: center;
     padding:10px 0px;
 }
-/* #destination{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-} */
+
 #destination::before{
   content: "";
   background: url(./img/c\ \(2\).jpg);
@@ -260,3 +255,147 @@ footer{
  justify-content: center;
  padding: 10px;
 }
+
+
+/* for 1200px  */
+@media screen and (max-width: 1200px) {
+
+  #home {
+    padding: 50px 100px;
+  }
+
+ 
+
+  .homeheading {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 8px 25px;
+    font-size: 1.2rem;
+  }
+
+  #services-cont {
+    margin: 60px 0;
+  }
+
+  .s-h {
+    font-size: 2rem;
+  }
+
+  #services .box {
+    margin: 0 20px;
+    padding: 30px;
+  }
+
+  .shh {
+    font-size: 1.5rem;
+  }
+
+  .h-t {
+    font-size: 2rem;
+  }
+
+  #country-box img {
+    height: 120px;
+    width: 120px;
+    margin: 20px 20px;
+  }
+
+  #contact::before {
+    height: 500px;
+  }
+
+  .h-prim {
+    font-size: 2rem;
+  }
+
+  #contactbox form {
+    width: 60%;
+  }
+}
+
+
+/* for phone (600px) */
+
+
+@media screen and (max-width: 600px) {
+  #navbar ul li {
+    margin: 5px 0;
+    
+  }
+
+  #navbar ul li a {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  #home {
+    padding: 50px 20px;
+  }
+
+  .homeheading {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    margin: 10px 0; /* Added to adjust button spacing */
+  }
+
+  #services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    }
+
+  #services-cont {
+    margin: 40px 0;
+  }
+
+  .s-h {
+    font-size: 1.5rem;
+  }
+
+  #services .box {
+    margin: 0 10px;
+  }
+
+  .shh {
+    font-size: 1.2rem;
+  }
+
+  .h-t {
+    font-size: 1.5rem;
+  }
+
+  #country-box img {
+    height: 80px;
+    width: 80px;
+    margin: 10px 10px;
+  }
+
+  #contact::before {
+    height: 400px;
+  }
+
+  .h-prim {
+    font-size: 1.5rem;
+  }
+
+  #contactbox form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 417px){
+#navbar ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
